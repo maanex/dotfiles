@@ -40,6 +40,7 @@ alias r='bun run $1'
 alias portfree="sudo kill -9 \$(sudo lsof -t -i :\$1)"
 alias v='bun x vite'
 alias x='bun x'
+alias q='sh ~/.scripts/ask_gemini.sh $*'
 
 alias yubi='ssh-add -D && ssh-add -s /usr/lib64/opensc-pkcs11.so'
 alias fix-chrome='rm -rf ~/.config/google-chrome/Singleton*'
