@@ -3,6 +3,9 @@
 # PS1='\[\e[2m\]\u\[\e[0m\] \[\e[32;1m\]\w\[\e[0m\]\$ \[\e]0;\w <\l>\a\]'
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[2m\]\u\[\e[0m\] \[\e[93;1m\]${PS1_CMD1}\[\e[0m\] \[\e[32;1m\]\w\[\e[0m\]\$ \[\e]0;\w <\l>\a\]'
 
+XCOMPOSEFILE=$HOME/.XCompose
+
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
