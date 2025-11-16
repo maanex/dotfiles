@@ -50,6 +50,7 @@ alias venv='source ./.venv/bin/activate'
 alias yubi='ssh-add -D && ssh-add -s /usr/lib64/opensc-pkcs11.so'
 alias fix-chrome='rm -rf ~/.config/google-chrome/Singleton*'
 alias fix-spotify='rm -f ~/.var/app/com.spotify.Client/cache/Singleton*'
+alias fixa='fix-chrome; fix-spotify'
 alias edit-compose='nano /usr/share/X11/locale/en_US.UTF-8/Compose'
 alias logout='dbus-send --session --type=method_call --print-reply --dest=org.gnome.SessionManager /org/gnome/SessionManager org.gnome.SessionManager.Logout uint32:1'
 
