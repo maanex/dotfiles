@@ -47,7 +47,7 @@ alias q='sh ~/.scripts/ask_gemini.sh $*'
 alias py='python3'
 alias venv='source ./.venv/bin/activate'
 
-alias yubi='ssh-add -D && ssh-add -s /usr/lib64/opensc-pkcs11.so'
+alias yubi='ykman list > /dev/null && ssh-add -D && ssh-add -s /usr/lib64/opensc-pkcs11.so'
 alias fix-chrome='rm -rf ~/.config/google-chrome/Singleton*'
 alias fix-spotify='rm -f ~/.var/app/com.spotify.Client/cache/Singleton*'
 alias fixa='fix-chrome; fix-spotify'
