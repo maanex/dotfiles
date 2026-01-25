@@ -53,6 +53,7 @@ alias fix-spotify='rm -f ~/.var/app/com.spotify.Client/cache/Singleton*'
 alias fixa='fix-chrome; fix-spotify'
 alias edit-compose='nano /usr/share/X11/locale/en_US.UTF-8/Compose'
 alias logout='dbus-send --session --type=method_call --print-reply --dest=org.gnome.SessionManager /org/gnome/SessionManager org.gnome.SessionManager.Logout uint32:1'
+alias o='xdg-open'
 
 alias gl='git log --oneline --graph --decorate --all'
 function gp() { git add -A; git commit -am "$*"; git push; }
