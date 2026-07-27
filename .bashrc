@@ -56,7 +56,7 @@ alias logout='dbus-send --session --type=method_call --print-reply --dest=org.gn
 alias o='xdg-open'
 
 alias gl='git log --oneline --graph --decorate --all'
-function gp() { git add -A; git commit -am "$*"; git push; }
+function gp() { if ! git diff --quiet --ignore-submodules || [ -n "$(git ls-files --others --exclude-standard)" ]; then git add -A; git commit -m "$*"; fi; git push; }
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
