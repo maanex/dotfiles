@@ -63,6 +63,13 @@ function gc() { if ! git diff --quiet --ignore-submodules || [ -n "$(git ls-file
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
+# turbocache
+export TURBO_API=https://turbocache.tude.network
+export TURBO_TEAM=freestuff
+
+SECRETSFILE=/home/andi/repos/dotfiles/.secrets
+[ -f $SECRETSFILE ] && . $SECRETSFILE
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
