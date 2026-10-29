@@ -59,6 +59,8 @@ alias gl='git log --oneline --graph --decorate --all'
 function gp() { if ! git diff --quiet --ignore-submodules || [ -n "$(git ls-files --others --exclude-standard)" ]; then git add -A; git commit -m "$*"; fi; git push; }
 function gc() { if ! git diff --quiet --ignore-submodules || [ -n "$(git ls-files --others --exclude-standard)" ]; then git add -A; git commit -m "$*"; fi; }
 
+function llmskills() { bunx skills "$@" --agent github-copilot antigravity --global; }
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
